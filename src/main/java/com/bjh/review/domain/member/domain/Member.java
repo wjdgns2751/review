@@ -1,10 +1,7 @@
 package com.bjh.review.domain.member.domain;
 
 import jakarta.persistence.*;
-import lombok.AccessLevel;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.time.LocalDateTime;
 
@@ -12,6 +9,8 @@ import java.time.LocalDateTime;
 @Entity
 @Getter
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
+@AllArgsConstructor(access = AccessLevel.PROTECTED)
+@Builder
 public class Member {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -36,19 +35,6 @@ public class Member {
     @PreUpdate
     public void onUpdate(){
         this.updateAt = LocalDateTime.now();
-    }
-
-    @Builder
-    public Member(String name, String email, String password, String addr, Role role, LocalDateTime createdAt,
-                  LocalDateTime updateAt) {
-        this.name = name;
-        this.email = email;
-        this.password = password;
-        this.addr = addr;
-        this.role = role;
-        this.status = true;
-        this.createdAt = createdAt;
-        this.updateAt = updateAt;
     }
 
 }
