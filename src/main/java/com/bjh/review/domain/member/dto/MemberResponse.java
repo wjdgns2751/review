@@ -2,7 +2,6 @@ package com.bjh.review.domain.member.dto;
 
 import com.bjh.review.domain.common.DateUtils;
 import com.bjh.review.domain.member.domain.Member;
-import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
 
@@ -11,7 +10,7 @@ import java.io.Serializable;
 
 public class MemberResponse{
 
-    @AllArgsConstructor
+
     @Builder
     @Getter
     public static class SignUpDTO {
@@ -27,7 +26,6 @@ public class MemberResponse{
 
     }
 
-    @AllArgsConstructor
     @Builder
     @Getter
     public static class SignInDTO implements Serializable {

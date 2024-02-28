@@ -2,13 +2,11 @@ package com.bjh.review.domain.member.dto;
 
 import com.bjh.review.domain.member.domain.Member;
 import com.bjh.review.domain.member.domain.Role;
-import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
 
 public class MemberRequest {
     @Getter
-    @AllArgsConstructor
     @Builder
     public static class SignUpDTO {
         private String name;
