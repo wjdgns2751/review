@@ -1,7 +1,6 @@
 package com.bjh.review.domain.member.domain;
 
 import lombok.Getter;
-import java.util.Arrays;
 
 @Getter
 public enum Role {

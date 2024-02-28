@@ -1,6 +1,5 @@
 package com.bjh.review.domain.member.application;
 import com.bjh.review.domain.member.domain.Member;
-import com.bjh.review.domain.member.domain.Role;
 import com.bjh.review.domain.member.dto.MemberResponse;
 import com.bjh.review.domain.member.dto.MemberRequest;
 import com.bjh.review.domain.member.repository.MemberRepository;

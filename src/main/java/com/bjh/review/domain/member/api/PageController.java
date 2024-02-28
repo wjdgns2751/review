@@ -1,7 +1,6 @@
 package com.bjh.review.domain.member.api;
 
 import com.bjh.review.domain.member.application.MemberService;
-import com.bjh.review.domain.member.domain.Member;
 import com.bjh.review.domain.member.dto.MemberResponse;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
